@@ -1,0 +1,29 @@
+[
+  {
+    "id": 1,
+    "name": "Md",
+    "phone": "1234567890",
+    "country_code": "91",
+    "otp": "23434",
+    "is_verified": true,
+    "created_at": "Tue, 01 Jun 2021 06:53:17 GMT"
+  },
+  {
+    "id": 2,
+    "name": "Jack",
+    "phone": "4142424223",
+    "country_code": "91",
+    "otp": "88392",
+    "is_verified": true,
+    "created_at": "Tue, 02 Jun 2021 06:53:17 GMT"
+  },
+  {
+    "id": 3,
+    "name": "Sparrow",
+    "phone": "9839274928",
+    "country_code": "91",
+    "otp": "88524",
+    "is_verified": true,
+    "created_at": "Tue, 03 Jun 2021 06:53:17 GMT"
+  }
+]

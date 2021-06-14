@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="" />
+    <title>Otp login</title>
+
+    <!-- CSS only -->
+    <link
+      href="https://getbootstrap.com/docs/5.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
+
+    <meta name="theme-color" content="#7952b3" />
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+
+    <!-- Custom styles for this template -->
+    <link href="style.css" rel="stylesheet" />
+  </head>
+  <body class="text-center">
+    <main class="form-signin">
+      <form id="askOtpForm">
+        <img class="mb-4" src="./assets/programmer.png" alt="" width="72" height="auto" />
+        <h1 class="h3 mb-3 fw-normal">Please sign in</h1>
+
+        <div class="form-floating">
+          <input type="text" class="form-control" id="country_code" placeholder="+91" maxlength="3" />
+          <label for="country_code">Country code (+91)</label>
+        </div>
+        <div class="form-floating">
+          <input type="number" class="form-control" id="phone" placeholder="9257248763" />
+          <label for="phone">Phone</label>
+        </div>
+
+        <div class="checkbox mb-3">
+          <label> <input type="checkbox" value="remember-me" /> Remember me </label>
+        </div>
+        <button class="w-100 btn btn-lg btn-primary" type="submit">Get Otp</button>
+        <p class="mt-5 mb-3 text-muted">&copy; 2017–2021</p>
+      </form>
+    </main>
+
+    <div class="notify"><p class="message"></p></div>
+
+    <script src="./main.js"></script>
+  </body>
+</html>

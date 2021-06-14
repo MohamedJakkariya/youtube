@@ -1,0 +1,17 @@
+### Send otp route
+POST http://localhost:4000/user/otp/send
+Content-Type: application/json
+
+{
+    "country_code": "91",
+    "phone": "1232452352"
+}
+
+### Verify otp route
+POST http://localhost:4000/user/otp/verify
+Content-Type: application/json
+
+{
+    "otp": 12895,
+    "customer_id": "MSDQW0"
+}
