@@ -1,12 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Weather</title>
-</head>
-<body>
-    Weather application
-</body>
+
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.12/css/weather-icons.min.css"
+      integrity="sha512-r/Gan7PMSRovDus++vDS2Ayutc/cSdl268u047n4z+k7GYuR7Hiw71FsT3QQxdKJBVHYttOJ6IGLnlM9IoMToQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <main>
+      <section>
+        <div class="date">
+          <h1>Tue 22 september</h1>
+        </div>
+
+        <div class="degree current-degree">
+          <p>19</p>
+          <i class="wi wi-day-cloudy"></i>
+        </div>
+
+        <div class="week-days">
+          <div class="day">
+            <p class="day-name">Mon</p>
+            <i class="wi wi-day-sunny"></i>
+            <p class="degree">13</p>
+          </div>
+
+          <div class="day">
+            <p class="day-name">Mon</p>
+            <i class="wi wi-day-cloudy-gusts"></i>
+            <p class="degree">13</p>
+          </div>
+
+          <div class="day">
+            <p class="day-name">Mon</p>
+            <i class="wi wi-solar-eclipse"></i>
+            <p class="degree">13</p>
+          </div>
+
+          <div class="day">
+            <p class="day-name">Mon</p>
+            <i class="wi wi-hot"></i>
+            <p class="degree">13</p>
+          </div>
+
+          <div class="day">
+            <p class="day-name">Mon</p>
+            <i class="wi wi-day-lightning"></i>
+            <p class="degree">13</p>
+          </div>
+
+          <div class="day">
+            <p class="day-name">Mon</p>
+            <i class="wi wi-day-snow"></i>
+            <p class="degree">13</p>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <img src="./assets/gif/wind.gif" alt="wind" />
+      </section>
+    </main>
+  </body>
 </html>
