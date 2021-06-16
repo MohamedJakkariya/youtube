@@ -16,7 +16,7 @@ body {
 @mixin degree-partial {
   content: '';
   position: absolute;
-  border: 0.1px solid rgba(0, 0, 0, 0.8);
+  border: 0.1px solid $primary;
   border-radius: 50%;
 }
 
@@ -59,7 +59,6 @@ main {
         font-size: 7rem;
         padding: 0;
         margin: 0;
-
         font-weight: 300;
 
         &::after {
@@ -87,6 +86,10 @@ main {
         width: 70px;
         justify-content: flex-start;
         flex-direction: column;
+
+        .day-name {
+          color: $primary;
+        }
 
         .degree {
           position: relative;

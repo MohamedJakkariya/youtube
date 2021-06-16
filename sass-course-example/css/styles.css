@@ -78,7 +78,7 @@ main .left .current-degree p::after {
   top: 1rem;
   content: '';
   position: absolute;
-  border: 0.1px solid rgba(0, 0, 0, 0.8);
+  border: 0.1px solid #7952b3;
   border-radius: 50%;
 }
 
@@ -114,6 +114,10 @@ main .left .week-days .day {
           flex-direction: column;
 }
 
+main .left .week-days .day .day-name {
+  color: #7952b3;
+}
+
 main .left .week-days .day .degree {
   position: relative;
 }
@@ -125,7 +129,7 @@ main .left .week-days .day .degree::after {
   right: -5px;
   content: '';
   position: absolute;
-  border: 0.1px solid rgba(0, 0, 0, 0.8);
+  border: 0.1px solid #7952b3;
   border-radius: 50%;
 }
 
