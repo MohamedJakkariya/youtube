@@ -5,5 +5,132 @@
 
 body {
   font-family: 'Oxygen', sans-serif;
+  min-height: calc(100vh - 1rem);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #e1e8eb;
+}
+
+main {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 2fr 1fr;
+      grid-template-columns: 2fr 1fr;
+  -ms-grid-rows: 2fr;
+      grid-template-rows: 2fr;
+  width: 900px;
+  max-height: 500px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+          box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  color: #343a40;
+  background-color: #fff;
+}
+
+main .left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 2rem 0 2rem 2rem;
+}
+
+main .left .date h1 {
+  font-size: 3rem;
+  font-weight: 300;
+  padding: 0;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+main .left .current-degree {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1rem 0;
+}
+
+main .left .current-degree p {
+  position: relative;
+  font-size: 7rem;
+  padding: 0;
+  margin: 0;
+  font-weight: 300;
+}
+
+main .left .current-degree p::after {
+  width: 10px;
+  height: 10px;
+  top: 1rem;
+  content: '';
+  position: absolute;
+  border: 0.1px solid rgba(0, 0, 0, 0.8);
+  border-radius: 50%;
+}
+
+main .left .current-degree i {
+  padding: 0 3rem;
+  font-size: 5rem;
+  margin-top: 1rem;
+}
+
+main .left .week-days {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: stretch;
+      -ms-flex-pack: stretch;
+          justify-content: stretch;
+}
+
+main .left .week-days .day {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 70px;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main .left .week-days .day .degree {
+  position: relative;
+}
+
+main .left .week-days .day .degree::after {
+  width: 2px;
+  height: 2px;
+  top: 0;
+  right: -5px;
+  content: '';
+  position: absolute;
+  border: 0.1px solid rgba(0, 0, 0, 0.8);
+  border-radius: 50%;
+}
+
+main .right img {
+  width: 100%;
+  height: 100%;
 }
 /*# sourceMappingURL=styles.css.map */
